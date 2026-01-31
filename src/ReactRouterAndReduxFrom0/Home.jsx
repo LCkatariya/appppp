@@ -62,16 +62,16 @@ const Home = () => {
       <button onClick={() => { controler.get('/carts?delay=5000').abort() }}>abortRequestOf getCarts</button>
       <button onClick={() => handleClick()}>Apply Jobs on Naukri</button>
       <br />
-      <div>
-        all routes
-        <div> <Link to={'/login'} >login</Link></div>
-        <div> <Link to={'/dashboard'} >dashboard</Link></div>
-        <div> <Link to={'/registration'} >registration</Link></div>
-        <div> <Link to={'/productlist'} >productlist</Link></div>
-        <div> <Link to={'/movies'} >movies</Link></div>
-        <div> <Link to={'/reactHookForm'} >reactHookForm</Link></div>
-        <div> <Link to={'/formikForm'} >formikForm</Link></div>
-      </div>
+      <div>All Routes</div>
+      <ol>
+        <li> <Link to={'/login'} >login</Link></li>
+        <li> <Link to={'/dashboard'} >dashboard</Link></li>
+        <li> <Link to={'/registration'} >registration</Link></li>
+        <li> <Link to={'/productlist'} >productlist</Link></li>
+        <li> <Link to={'/movies'} >movies</Link></li>
+        <li> <Link to={'/reactHookForm'} >reactHookForm</Link></li>
+        <li> <Link to={'/formikForm'} >formikForm</Link></li>
+      </ol>
     </div>
   )
 }

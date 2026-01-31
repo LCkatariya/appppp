@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 const Home = () => {
   const [data, setData] = useState([])
-  const [urls, setUrls] = useState(["https://www.naukri.com/react-js-developer-jobs-1?k=react+js+developer&nignbevent_src=jobsearchDeskGNB&experience=6&jobAge=1", "https://www.naukri.com/react-js-developer-jobs-2?k=react+js+developer&nignbevent_src=jobsearchDeskGNB&experience=6&jobAge=1", "https://www.naukri.com/react-js-developer-jobs-3?k=react+js+developer&nignbevent_src=jobsearchDeskGNB&experience=6&jobAge=1"])
+  const [urls] = useState(["https://www.naukri.com/react-js-developer-jobs-1?k=react+js+developer&nignbevent_src=jobsearchDeskGNB&experience=6&jobAge=1", "https://www.naukri.com/react-js-developer-jobs-2?k=react+js+developer&nignbevent_src=jobsearchDeskGNB&experience=6&jobAge=1", "https://www.naukri.com/react-js-developer-jobs-3?k=react+js+developer&nignbevent_src=jobsearchDeskGNB&experience=6&jobAge=1"])
   useEffect(() => {
     // async function getData() {
     //   try {
@@ -63,7 +63,8 @@ const Home = () => {
       <button onClick={() => handleClick()}>Apply Jobs on Naukri</button>
       <br />
       <div>All Routes</div>
-      <ol>
+      <div>Once you login then redirect on dashboard</div>
+      <ul>
         <li> <Link to={'/login'} >login</Link></li>
         <li> <Link to={'/dashboard'} >dashboard</Link></li>
         <li> <Link to={'/registration'} >registration</Link></li>
@@ -71,7 +72,7 @@ const Home = () => {
         <li> <Link to={'/movies'} >movies</Link></li>
         <li> <Link to={'/reactHookForm'} >reactHookForm</Link></li>
         <li> <Link to={'/formikForm'} >formikForm</Link></li>
-      </ol>
+      </ul>
     </div>
   )
 }

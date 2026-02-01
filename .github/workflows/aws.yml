@@ -24,6 +24,8 @@ jobs:
       # 3️⃣ Install dependencies
       - name: Install dependencies
         run: npm install
+      - name: Run Test Case  
+        run: npm run test
 
       # 4️⃣ Build Vite app
       - name: Build app
